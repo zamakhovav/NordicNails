@@ -4,123 +4,115 @@
     <title>Nordic Beauty</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" type="text/css" href="css/bootstrap4/css/bootstrap.min.css">
-
     <!--Good fonts-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/src/scss/owl.carousel.scss">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/src/scss/owl.theme.default.scss">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/src/scss/_animate.scss">
-
-
+    <link rel="stylesheet" href="css/converted/main.css">
+    <link rel="stylesheet" href="css/bootstrap4/responsive.css">
+    <script src="plugins/Isotope/isotope.pkgd.min.js"></script>
 
 </head>
 <body>
     <div class="super_container">
 
-    <header class="header trans_300">
+        <header class="header">
 
-        <!-- Top navbar -->
-        <div class="top_nav">
+            <!-- Top navbar -->
+            <div class="top_nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="top_nav_left">
+                                <img src="images/estonia-flag-icon.png"> Customer Service: 123 4567</img>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="top_nav_right">Login | Sign up</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+            <div class="main_nav_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-right">
+                            <div class="logo_container">
+                                <a href="#" class="navbar-brand"><img src="images/logo.png" class="d-inline-block align">Nordic Beauty</a>
+                            </div>
+                            <nav class="navbar">
+                                <ul class="navbar_menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="categories.html">Manicure</a></li>
+                                    <li><a href="#">Pedicure</a></li>
+                                    <li><a href="#">Salons</a></li>
+                                    <li><a href="#">contact</a></li>
+                                </ul>
+                                <ul class="navbar_user">
+                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-user"></i></a></li>
+                                    <li class="checkout">
+                                        <a href="#">
+                                            <i class="fa fa-shopping-cart"></i>
+                                            <span id="checkout_items" class="checkout_items">2</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Slider -->
+        <div class="main_slider" style="background-image: url(images/main.jpg)">
+            <div class="container fill_height">
+                <div class="row align-items-center fill_height">
+                    <div class="col">
+                        <div class="main_slider_content">
+                            <h2>As you wish...</h2>
+                            <div class="red_button see_more_btn"><a href="categories.html">see more</a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="top_nav_left">
-                            <img src="images/estonia-flag-icon.png"> Customer Service: 123 4567</img>
+                    <div class="col-md-4">
+                        <div class="banner_item align-items-center" style="background-image: url(images/manicure/man_manicure.jpg)">
+                            <div class="banner_category">
+                                <a href="categories.html">manicure</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="top_nav_right">Login | Sign up</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Main Navigation -->
-        <div class="main_nav_container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-right">
-                        <div class="logo_container">
-                            <a href="#" class="navbar-brand"><img src="images/logo.png" class="d-inline-block align">Nordic Beauty</a>
-                        </div>
-                        <nav class="navbar">
-                            <ul class="navbar_menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="#">Manicure</a></li>
-                                <li><a href="#">Pedicure</a></li>
-                                <li><a href="#">Salons</a></li>
-                                <li><a href="#">contact</a></li>
-                            </ul>
-                            <ul class="navbar_user">
-                                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-                                <li class="checkout">
-                                    <a href="#">
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                        <span id="checkout_items" class="checkout_items">2</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Slider -->
-    <div class="main_slider" style="background-image: url(images/main.jpg)">
-        <div class="container fill_height">
-            <div class="row align-items-center fill_height">
-                <div class="col">
-                    <div class="main_slider_content">
-                        <!--<h6>Check our offers</h6>-->
-                        <h2>As you wish...</h2>
-                        <div class="red_button shop_now_button"><a href="#">see more</a></div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="banner_item align-items-center" style="background-image: url(images/manicure/man_manicure.jpg)">
-                        <div class="banner_category">
-                            <a href="#">manicure</a>
+                    <div class="col-md-4">
+                        <div class="banner_item align-items-center" style="background-image: url(images/nails/nails6.jpg)">
+                            <div class="banner_category">
+                                <a href="categories.html">Get free coupons</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="banner_item align-items-center" style="background-image: url(images/nails/nails6.jpg)">
-                        <div class="banner_category">
-                            <a href="#">Get free coupons</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="banner_item align-items-center" style="background-image: url(images/manicure/pedicure1.jpg)">
-                        <div class="banner_category">
-                            <a href="#">pedicure</a>
+                    <div class="col-md-4">
+                        <div class="banner_item align-items-center" style="background-image: url(images/manicure/pedicure1.jpg)">
+                            <div class="banner_category">
+                                <a href="categories.html">pedicure</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
 
         <!-- New Arrivals -->
 
-        <div class="new_arrivals">
+        <div class="manicure_services">
             <div class="container">
                 <div class="row">
                     <div class="col text-center">
@@ -136,14 +128,13 @@
 
                             <!-- Product 1 -->
 
-                            <div class="product-item men">
+                            <div class="product-item">
                                 <div class="product discount product_filter">
                                     <div class="product_image">
                                         <img src="images/manicure/manicure1.jpg" alt="">
                                     </div>
-                                    <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div>
                                     <div class="product_info">
-                                        <h6 class="product_name"><a href="single.html">EXPRESS MANICURE - Beauty salon</a></h6>
+                                        <h6 class="product_name"><a href="single_product.html">EXPRESS MANICURE - Beauty salon</a></h6>
                                         <div class="product_price">35.00€<span>40.00€</span></div>
                                     </div>
                                 </div>
@@ -152,15 +143,14 @@
 
                             <!-- Product 2 -->
 
-                            <div class="product-item women">
+                            <div class="product-item">
                                 <div class="product product_filter">
                                     <div class="product_image">
                                         <img src="images/manicure/manicure2.jpg" alt="">
                                     </div>
                                     <div class="favorite"></div>
-                                    <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>new</span></div>
                                     <div class="product_info">
-                                        <h6 class="product_name"><a href="single.html">EXPRESS MANICURE - Beauty salon</a></h6>
+                                        <h6 class="product_name"><a href="single_product.html">EXPRESS MANICURE - Beauty salon</a></h6>
                                         <div class="product_price">35.00€<span>40.00€</span></div>
                                     </div>
                                 </div>
@@ -169,14 +159,14 @@
 
                             <!-- Product 3 -->
 
-                            <div class="product-item women">
+                            <div class="product-item">
                                 <div class="product product_filter">
                                     <div class="product_image">
                                         <img src="images/manicure/manicure3.png" alt="">
                                     </div>
                                     <div class="favorite"></div>
                                     <div class="product_info">
-                                        <h6 class="product_name"><a href="single.html">EXPRESS MANICURE - Beauty salon</a></h6>
+                                        <h6 class="product_name"><a href="single_product.html">EXPRESS MANICURE - Beauty salon</a></h6>
                                         <div class="product_price">35.00€<span>40.00€</span></div>
                                     </div>
                                 </div>
@@ -185,14 +175,14 @@
 
                             <!-- Product 4 -->
 
-                            <div class="product-item accessories">
+                            <div class="product-item">
                                 <div class="product product_filter">
                                     <div class="product_image">
                                         <img src="images/manicure/manicure4.png" alt="">
                                     </div>
                                     <div class="favorite favorite_left"></div>
                                     <div class="product_info">
-                                        <h6 class="product_name"><a href="single.html">EXPRESS MANICURE - Beauty salon</a></h6>
+                                        <h6 class="product_name"><a href="single_product.html">EXPRESS MANICURE - Beauty salon</a></h6>
                                         <div class="product_price">35.00€<span>40.00€</span></div>
                                     </div>
                                 </div>
@@ -201,14 +191,14 @@
 
                             <!-- Product 5 -->
 
-                            <div class="product-item women men">
+                            <div class="product-item">
                                 <div class="product product_filter">
                                     <div class="product_image">
                                         <img src="images/manicure/manicure5.jpg" alt="">
                                     </div>
                                     <div class="favorite"></div>
                                     <div class="product_info">
-                                        <h6 class="product_name"><a href="single.html">EXPRESS MANICURE - Beauty salon</a></h6>
+                                        <h6 class="product_name"><a href="single_product.html">EXPRESS MANICURE - Beauty salon</a></h6>
                                         <div class="product_price">35.00€<span>40.00€</span></div>
                                     </div>
                                 </div>
@@ -220,24 +210,7 @@
                 </div>
                 <hr>
             </div>
-
         </div>
-
-    <!-- Footer -->
-
-    <footer class="footer">
-
-
-    </footer>
-
-</div>
-
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="css/bootstrap4/popper.js"></script>
-<script src="css/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="js/custom.js"></script>
+    </div>
 </body>
 </html>
